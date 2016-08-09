@@ -155,24 +155,20 @@ $(document).ready(function() {
     if(getMobileOperatingSystem() == "other") {
         console.log("This device is not iOS/Android.");
 
-        $(".downloadModal").attr("href", "#");
+        $(".downloadModal").bind('click', function(e){
+            e.preventDefault();
+        });
+
+        // $(".downloadModal").attr("href", "#");
         $(".downloadModal").removeAttr("target");
         $(".downloadModal").addClass("modalListener");
 
     }
 
-
-    // var btn = document.getElementsByClassName("modalListener");
     // When the user clicks on the button, open the modal 
     $(".modalListener").click(function(){
         modal.style.display = "block";
     });
-
-    // .onclick = function() {
-    //     modal.style.display = "block";
-    // }
-
-
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
