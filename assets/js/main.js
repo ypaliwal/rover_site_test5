@@ -132,6 +132,62 @@ $(document).ready(function() {
         setTimeout(helperM1,240); 
     });
 
+
+// MODAL IF NOT ON iOS/Android:
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    function getMobileOperatingSystem() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android/i.test(userAgent)) {
+            return "Android";
+        }
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return "iOS";
+        }
+        return "other";
+    }
+    
+    // If other, turn off links, show modal
+    if(getMobileOperatingSystem() == "other") {
+        console.log("This device is not iOS/Android.");
+
+        $(".downloadModal").attr("href", "#");
+        $(".downloadModal").removeAttr("target");
+        $(".downloadModal").addClass("modalListener");
+
+    }
+
+
+    // var btn = document.getElementsByClassName("modalListener");
+    // When the user clicks on the button, open the modal 
+    $(".modalListener").click(function(){
+        modal.style.display = "block";
+    });
+
+    // .onclick = function() {
+    //     modal.style.display = "block";
+    // }
+
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+
 });
 
 

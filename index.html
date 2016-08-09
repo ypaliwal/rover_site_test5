@@ -69,6 +69,26 @@
 </head> 
 
 <body class="home-page">   
+
+    <!-- Download Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">x</span>
+        <h4 class="text-center">Download the app on the Android Play Store or iPhone App Store:</h4>
+        <br>
+        <div class="text-center">
+        <span class=""><a href="https://itunes.apple.com/app/rover-cheaper-parking/id1017091357?mt=8" target="_blank"><i class="fa fa-apple"></i> Download for iPhone</a></span>
+        <div style="height: 30px; width: 20px;"></div>
+        <span class=""><a href="https://play.google.com/store/apps/details?id=com.roverparking.android&hl=en" target="_blank"><i class="fa fa-android"></i> Download for Android</a></span>
+        </div>
+        <div style="height: 20px; width: 20px;"></div>
+        
+        <!-- <li><a class="btn btn-ghost" href="https://itunes.apple.com/app/rover-cheaper-parking/id1017091357?mt=8" target="_blank"><i class="fa fa-apple"></i><span class="text">Download for iOS</span> </a></li> -->
+        <!-- <li><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.roverparking.android&hl=en" target="_blank"><i class="fa fa-android"></i><span class="text">Download for Android</span></a></li> -->
+      </div>
+    </div>
+
     <!-- ******HEADER****** --> 
 
     <div class="how_works">
@@ -137,9 +157,9 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active nav-item"><a id="how_works_btn" href="#">Why Rover?</a></li>
-                        <li class="active nav-item"><a href="https://9eqv.app.link/download" target="_blank">Download</a></li>
+                        <li class="active nav-item"><a class="downloadModal" href="https://9eqv.app.link/download" target="_blank">Download</a></li>
                         <!--<li class="nav-item"><a href="login.html">Login</a></li>-->
-                        <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="https://9eqv.app.link/download" target="_blank">List Your Spot</a></li>
+                        <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary downloadModal" href="https://9eqv.app.link/download" target="_blank">List Your Spot</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
             </nav><!--//main-nav-->                     
@@ -160,7 +180,7 @@
             <h2 class="title">Parking Has A New Best Friend</h2>
             <h3 id="os"></h3>
             <p class="intro">Rover let’s you find reliable parking in your city without breaking the bank.</p>
-            <p><a class="btn btn-cta btn-cta-primary" href="https://9eqv.app.link/download" target="_blank">Get Parking</a></p>
+            <p><a class="btn btn-cta btn-cta-primary downloadModal" href="https://9eqv.app.link/download" target="_blank">Get Parking</a></p>
             <p class="belowIntro">It's like the AirBnB or Uber for parking.</p>
             <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" ><i class="fa fa-youtube-play"></i> Watch the video</button>   
         </div><!--//container-->
@@ -194,7 +214,7 @@
                                     <h3 class="title">Your empty driveway can earn you some extra cash</h3>
                                     <div class="desc">
                                         <p>Making our city a smarter, cleaner, better place to live.</p>
-                                        <p><a class="btn btn-cta btn-cta-primary" href="https://9eqv.app.link/download" target="_blank">List Your Spot</a></p>  
+                                        <p><a class="btn btn-cta btn-cta-primary downloadModal" href="https://9eqv.app.link/download" target="_blank">List Your Spot</a></p>  
                                     </div>
                                 </div>                        
                             </div><!--//content-->
@@ -223,7 +243,7 @@
                                     <h3 class="title">Tap the app, get a spot</h3>
                                     <div class="desc">
                                         <p>Rover is the smartest way to park. One tap and you've booked a spot.</p>
-                                        <p><a class="btn btn-cta btn-cta-primary" href="https://9eqv.app.link/download" target="_blank">Get Parking</a></p>  
+                                        <p><a class="btn btn-cta btn-cta-primary downloadModal" href="https://9eqv.app.link/download" target="_blank">Get Parking</a></p>  
                                     </div>
                                 </div>                        
                             </div><!--//content-->
@@ -250,7 +270,7 @@
                                     <h3 class="title">Ready anywhere, anytime</h3>
                                     <div class="desc">
                                         <p>Get a spot for as short as 15 minutes. Extend your booking if you need more time.</p>
-                                        <p><a class="btn btn-cta btn-cta-primary" href="https://9eqv.app.link/download" target="_blank">Get Parking</a></p>  
+                                        <p><a class="btn btn-cta btn-cta-primary downloadModal" href="https://9eqv.app.link/download" target="_blank">Get Parking</a></p>  
                                     </div> 
                                 </div>                       
                             </div><!--//content-->
@@ -277,7 +297,7 @@
                                     <h3 class="title">Low-cost to convenience</h3>
                                     <div class="desc">
                                         <p>Book a spot where you want without breaking the bank.</p>
-                                        <p><a class="btn btn-cta btn-cta-primary" href="https://9eqv.app.link/download" target="_blank">Get Parking</a></p>  
+                                        <p><a class="btn btn-cta btn-cta-primary downloadModal" href="https://9eqv.app.link/download" target="_blank">Get Parking</a></p>  
                                     </div> 
                                 </div>                       
                             </div><!--//content-->
@@ -453,14 +473,7 @@
         </div><!--//modal-dialog-->
     </div><!--//modal-->
 
-    <!-- Download Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">x</span>
-        <p>Some text in the Modal..</p>
-      </div>
-    </div>
+    
  
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.2.min.js"></script>
@@ -476,50 +489,12 @@
     <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
     <script type="text/javascript" src="assets/js/vimeo.js"></script>
 
-    <script type="text/javascript">
-        function getPlatform(){
-            var platform=["Win32","Android","iOS"];
-            for(var i = 0; i < platform.length; i++){
-                if(navigator.platform.indexOf(platform[i])>-1){
-                    return platform[i];
-                }
-            }
-        }
-        console.log(getPlatform());
-        console.log(navigator.userAgent);
-
-        function getMobileOperatingSystem() {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-            // Windows Phone must come first because its UA also contains "Android"
-            if (/windows phone/i.test(userAgent)) {
-                return "Windows Phone";
-            }
-
-            if (/android/i.test(userAgent)) {
-                return "Android";
-            }
-
-            // iOS detection from: http://stackoverflow.com/a/9039885/177710
-            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                return "iOS";
-            }
-
-            return "unknown";
-        }
-        console.log(getMobileOperatingSystem());
-
-        $(document).ready(function() {
-            $("#os").html(getMobileOperatingSystem());
-        });
-    </script> 
-
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    var s1 = document.createElement("script"),s0 = document.getElementsByTagName("script")[0];
     s1.async=true;
     s1.src='https://embed.tawk.to/579125197153f65b6f2b4c35/default';
     s1.charset='UTF-8';
