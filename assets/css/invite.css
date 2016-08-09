@@ -1,0 +1,9 @@
+#header {
+	position: static;
+}
+
+@media (min-width: 767px) {
+	h3 {
+		font-size: 30px;
+	}
+}
